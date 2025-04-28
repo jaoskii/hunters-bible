@@ -1,16 +1,4 @@
-# hunters_bible
+# Hunter's Bible
+Your ultimate companion in the world of Monster Hunter Wilds. Whether you're hunting legendary monsters, crafting the perfect armor set, or seeking out rare items, Hunter's Bible has you covered. Packed with detailed monster info, weapon and armor stats, and an easy-to-use set builder, this app is a must-have for every hunter. Track your progress, master your builds, and take your hunting skills to the next level.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Stay prepared. Stay deadly. Welcome to the Hunter's Bible.
