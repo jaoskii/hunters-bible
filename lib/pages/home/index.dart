@@ -5,6 +5,7 @@ import 'package:hunters_bible/components/global/normal_listing.dart';
 import 'package:hunters_bible/pages/armorsets/index.dart';
 import 'package:hunters_bible/pages/monsters/index.dart';
 import 'package:hunters_bible/models/item_listing.dart';
+import 'package:hunters_bible/pages/weapons/index.dart';
 
 class Page1Screen extends StatelessWidget {
   const Page1Screen({super.key});
@@ -22,11 +23,11 @@ class Page1Screen extends StatelessWidget {
         description: 'Protective gear info.',
         widgetRoute: const ArmorsetsPage(),
       ),
-      /* ItemListing(
-        title: 'Armor Sets',
+      ItemListing(
+        title: 'Weapons',
         description: 'Weapon types and stats.',
-        widgetRoute: ArmorSetsPage(),
-      ), */
+        widgetRoute: const WeaponsPage(),
+      ),
       ItemListing(
         title: 'Items',
         description: 'Usable and collectible items.',

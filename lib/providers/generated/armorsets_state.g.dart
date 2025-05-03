@@ -6,7 +6,7 @@ part of '../armorsets_state.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$armorsetsStateHash() => r'fc7cc121c4be1c87b24d2e02c14d84d203f158f4';
+String _$armorsetsStateHash() => r'1967a0583a44557970b44de6d22572e6f3d4c5ce';
 
 /// See also [ArmorsetsState].
 @ProviderFor(ArmorsetsState)
