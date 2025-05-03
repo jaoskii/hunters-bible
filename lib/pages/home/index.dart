@@ -1,6 +1,8 @@
 // lib/pages/home/index.dart
 import 'package:flutter/material.dart';
 import 'package:hunters_bible/components/global/normal_listing.dart';
+//import 'package:hunters_bible/pages/armors/index.dart';
+import 'package:hunters_bible/pages/armorsets/index.dart';
 import 'package:hunters_bible/pages/monsters/index.dart';
 import 'package:hunters_bible/models/item_listing.dart';
 
@@ -13,18 +15,18 @@ class Page1Screen extends StatelessWidget {
       ItemListing(
         title: 'Monsters',
         description: 'All about monsters.',
-        widgetRoute: MonstersPage(),
+        widgetRoute: const MonstersPage(),
       ),
       ItemListing(
-        title: 'Weapons',
-        description: 'Weapon types and stats.',
-        widgetRoute: MonstersPage(),
-      ),
-      ItemListing(
-        title: 'Armor',
+        title: 'Armor Sets',
         description: 'Protective gear info.',
-        widgetRoute: MonstersPage(),
+        widgetRoute: const ArmorsetsPage(),
       ),
+      /* ItemListing(
+        title: 'Armor Sets',
+        description: 'Weapon types and stats.',
+        widgetRoute: ArmorSetsPage(),
+      ), */
       ItemListing(
         title: 'Items',
         description: 'Usable and collectible items.',

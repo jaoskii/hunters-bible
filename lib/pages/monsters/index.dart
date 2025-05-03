@@ -5,7 +5,7 @@ import 'package:hunters_bible/models/item_listing.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hunters_bible/providers/monsters_state.dart';
 import 'package:get/get.dart';
-import 'package:hunters_bible/controllers/monstersController.dart';
+import 'package:hunters_bible/getXcontrollers/monstersController.dart';
 
 class MonstersPage extends ConsumerStatefulWidget {
   const MonstersPage({super.key});
@@ -17,13 +17,17 @@ class MonstersPage extends ConsumerStatefulWidget {
 class MonstersPageState extends ConsumerState<MonstersPage>
     with WidgetsBindingObserver {
   final MonsterSizeController sizeController = Get.put(MonsterSizeController());
+  bool isLoading = true;
 
   @override
   void initState() {
     super.initState();
     // This will only run once when the widget is first inserted into the widget tree
-    Future.microtask(() {
-      ref.read(monstersStateProvider.notifier).fetchMonsters();
+    Future.microtask(() async {
+      await ref.read(monstersStateProvider.notifier).fetchMonsters();
+      setState(() {
+        isLoading = false;
+      });
     });
   }
 
@@ -89,7 +93,9 @@ class MonstersPageState extends ConsumerState<MonstersPage>
       body: Padding(
         padding: const EdgeInsets.only(top: 10.0),
         child: ThumbnailListing(
-            list: convertMonstersToItemListing(monstersListing)),
+          list: convertMonstersToItemListing(monstersListing),
+          isLoading: isLoading,
+        ),
       ),
     );
   }

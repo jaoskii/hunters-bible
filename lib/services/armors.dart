@@ -2,10 +2,10 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:hunters_bible/configs/endpoints.dart';
 
-class MonstersService {
-  /// Fetches a list of large monsters from the API.
-  static Future<Map<String, dynamic>> fetchMonsters() async {
-    final response = await http.get(Uri.parse(Endpoints.fetchMonsters));
+class ArmorsService {
+  /// Fetches a list of armors from the API.
+  static Future<Map<String, dynamic>> fetchArmors() async {
+    final response = await http.get(Uri.parse(Endpoints.fetchArmors));
     var responseBody = {
       'status': '',
       'data': [],
@@ -25,9 +25,9 @@ class MonstersService {
     return responseBody;
   }
 
-  /// Fetches a list of weapons from the API.
-  static Future<Map<String, dynamic>> fetchWeapons() async {
-    final response = await http.get(Uri.parse(Endpoints.fetchWeapons));
+  /// Fetches a list of armor sets from the API.
+  static Future<Map<String, dynamic>> fetchArmorSets() async {
+    final response = await http.get(Uri.parse(Endpoints.fetchArmorSets));
     var responseBody = {
       'status': '',
       'data': [],
